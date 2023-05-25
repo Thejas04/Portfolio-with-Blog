@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thejas Malenahalli Niranjan</title>
+    <link rel="icon" href="{% static '/image/favicon.png' %}" >
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="{% static '/css/blog.css' %}">
+    <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+</head>
+<body>
+    <canvas id="canvas" ></canvas>                                         
+    <!-- Navbar -->
+    <header>
+        <a href="#home" class="logo">
+            <img src=" {% static '/image/hacker.gif' %}  " alt="" width="40px"; height="40px";>
+        </a>
+ 
+        <div class="bi bi-list" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="">Blog</a></li>
+            <!-- <div class="bx bx-moon" id="darkmode"></div> -->
+        </ul>
+    </header>
+    
+        <!-- banner section starts -->
+<section class="banner" id="banner">
+
+    <div class="content">
+        <img src="{% static '/image/blog.gif' %}"  width="90%" height="50%"  >
+    </div>
+
+</section>
+
+<!-- posts section starts  -->
+
+{%for post in object_list%}
+<section class="container" id="posts">
+    
+    <div class="posts-container">
+    
+        <div class="post">
+            <img src="{{post.image.url}}"  width="90%" height="50%"  >
+    
+            <h3 class="title">{{post.title}}</h3>
+           
+            <div class="date">
+                <i class="far fa-clock"></i>
+                <span>{{post.created_at}}</span>
+            </div>
+            <br><br>
+            <p class="text">{{ post.content | safe}}</p>
+            <div class="links">
+                <br>
+               
+            </div>
+        </div>
+    
+    </div>    
+        </section>    
+            {% endfor %}
+
+
+        <!-- Copyright -->
+    
+    <!-- Copyright -->
+    
+ 
+    <div class="copyright">
+        <p><div>© 2023 Thejas Malenahalli Niranjan</div></p>
+    </div>
+ 
+    <!-- Link To JS -->
+    
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+</html>

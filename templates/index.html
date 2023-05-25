@@ -1,0 +1,441 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thejas Malenahalli Niranjan</title>
+    <link rel="icon" href="{% static '/image/favicon.png' %}" >
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+ 
+</head>
+<body>
+    <canvas id="canvas" ></canvas>
+    <!-- Navbar -->
+    <header>
+        <a href="#home" class="logo">
+            <img src=" {% static '/image/hacker.gif' %}  " alt="" width="40px"; height="40px";>
+        </a>
+ 
+        <div class="bi bi-list" id="menu-icon"></div>
+ 
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="blog" target="_blank" >Blog</a></li>
+            <!-- <div class="bx bx-moon" id="darkmode"></div> -->
+        </ul>
+    </header>
+    <!-- Home -->
+ 
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/Thejas04" target="_blank" ><i class='bi bi-github'></i></a>
+            <a href="https://www.linkedin.com/in/thejas-malenahalli-niranjan-6323b9247/" target="_blank" ><i class="bi bi-linkedin"></i></i></a>
+        </div>
+        <div class="home-img">
+            <img src="{% static '/image/profile .jpg' %}  " alt="">
+        </div>
+        <div class="home-text">
+            <span>Hello, I'm</span>
+            <h1 contenteditable="true" >Thejas Malenahalli Niranjan</h1>
+            <h3>Full-Stack Developer || Cybersecurity Engineer</h3>
+            <br>
+            <a href="#about" class="btn" >Contact Me</a>
+        </div>
+ 
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="heading">
+            <h2 contenteditable="true" >FEW WORDS ABOUT ME</h2>
+            <span>Myself</span>
+        </div>
+        <!-- About Content -->
+        <div class="about-container">
+            <div class="about-img">
+                <img src="  {% static '/image/about-img.jpg' %} " alt="">
+            </div>
+            <div class="about-text">
+                <p>As a web developer, am skilled in designing, developing, and maintaining websites and web applications. I have a deep understanding of programming languages mentioned in skills.
+                    As a cybersecurity engineer, am responsible for protecting computer systems, networks, and data from unauthorized access, theft, or damage. <br>
+                    I have expertise in security technologies and methodologies, such as firewalls, intrusion detection systems, penetration testing, cryptography, and security policy development.
+                    <br>These combined skills in web development and cybersecurity make me a valuable asset in today's digital world. Am able to not only create user-friendly and visually appealing websites but also ensure that they are secure and protected from cyber threats. 
+                    </p>
+                <div class="information">
+                    <!-- Box 1 -->
+                    <div class="info-box">
+                    </div>
+                    <!-- Box 2 -->
+                    <div class="info-box">
+                        <i class='bi bi-phone' ></i>
+                        <span><a href="tel:+4917684349868">+49 17684349868</a> <br>
+                            <a href="tel:+919591165507">+91 9591165507</a></span>
+                    </div>
+                    <!-- Box 3 -->
+                    <div class="info-box">
+                        <i class='bi bi-envelope' ></i>
+                        <span><a href="mailto:emailme@thejasmn.com">emailme@thejasmn.com</a></span>
+                    </div>
+                </div>
+                <a href="./thejasmn resume.pdf" target="_blank" class="btn" >Download Cv</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>SKILLS</h2>
+            <span>WORKED WITH</span>
+        </div><br><br><br><br>
+        <!-- Skills Content -->
+        <div class="skills-slider" >
+            <div class="skills-track">
+            
+                <!-- Box 1 -->
+                <div class="slide">
+                    <img src=" {% static '/image/317755_badge_html_html5_achievement_award_icon.svg' %}  " alt="" width="33rem">
+                </div>
+                <!-- Box 2 -->
+                <div class="slide">
+                    <img src=" {% static '/image/4202020_css3_html_logo_social_social media_icon.svg' %} " alt=""  width="32rem" >
+                </div>
+               
+                <!-- Box 3 -->
+                <div class="slide">
+                    <img src="  {% static '/image/4373213_js_logo_logos_icon.svg' %} " alt="" width="33rem" >
+                </div>
+                <!-- Box 4 -->
+                <div class="slide">
+                    <img src=" {% static '/image/icons8-bootstrap.svg' %} " alt="" width="33rem">
+                </div>
+                <!-- Box 5 -->
+                <div class="slide">
+                    <img src="{% static '/image/4375050_logo_python_icon.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 6 -->
+                <div class="slide">
+                    <img src="{% static '/image/icons8-amazon-web-services.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 7 -->
+                <div class="slide">
+                    <img src="{% static '/image/1298743_github_git_logo_social_icon.svg' %}" alt="" width="32rem">
+                </div>
+                <!-- Box 8 -->
+                <div class="slide">
+                    <img src="{% static '/image/django.png' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 9 -->
+                <div class="slide">
+                    <img src="{% static '/image/postgresql.png' %}" alt="" width="80rem" >
+                </div>
+                <!-- Box 10 -->
+                <div class="slide">
+                    <img src="{% static '/image/seo.png' %}" alt="" width="50rem" style="background-color: white;" >
+                </div>
+                <!-- Box 11 -->
+                <div class="slide">
+                    <img src="{% static '/image/cyber.png' %}" alt="" width="70rem">
+                </div>
+
+                <!--Doublicate logo-->
+
+                <!-- Box 1 -->
+                <div class="slide">
+                    <img src="{% static '/image/317755_badge_html_html5_achievement_award_icon.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 2 -->
+                <div class="slide">
+                    <img src="{% static '/image/4202020_css3_html_logo_social_social media_icon.svg' %}" alt=""  width="32rem" >
+                </div>
+               
+                <!-- Box 3 -->
+                <div class="slide">
+                    <img src="{% static '/image/4373213_js_logo_logos_icon.svg' %}" alt="" width="33rem" >
+                </div>
+                <!-- Box 4 -->
+                <div class="slide">
+                    <img src="{% static '/image/icons8-bootstrap.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 5 -->
+                <div class="slide">
+                    <img src="{% static '/image/4375050_logo_python_icon.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 6 -->
+                <div class="slide">
+                    <img src="{% static '/image/icons8-amazon-web-services.svg' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 7 -->
+                <div class="slide">
+                    <img src="{% static '/image/1298743_github_git_logo_social_icon.svg' %}" alt="" width="32rem">
+                </div>
+                <!-- Box 8 -->
+                <div class="slide">
+                    <img src="{% static '/image/django.png' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 9 -->
+                <div class="slide">
+                    <img src="{% static '/image/postgresql.png' %}" alt="" width="" >
+                </div>
+                <!-- Box 10 -->
+                <div class="slide">
+                    <img src="{% static '/image/seo.png' %}" alt="" width="33rem">
+                </div>
+                <!-- Box 11 -->
+                <div class="slide">
+                    <img src="{% static '/image/cyber.png' %}" alt="" width="33rem">
+                </div>
+                </div>
+            </div>
+          <!--  <div class="skills-img">
+                <img src="123.png" alt="">
+            </div> -->
+        </div>
+        </div>
+ 
+    </section>
+    <!-- EXPERIENCE -->
+    <section class="services" id="experience">
+        <div class="heading">
+            <h2>EXPERIENCE</h2>
+            <span>MY KNOWLEDGE AND ACHIEVEMENTS</span>
+        </div>
+        <div class="services-content">
+            <!-- Box 1 -->
+                <div class="services-box">
+                    <img src="./image/was logo.png" alt="" width="150px">
+                    <h3>Associate Developer </h3>
+                    <span>April 2021 - April 2023 (remote) - WAS Techno Developers, India</span><br>
+                    <ul class="list">
+                        <li>Developing websites, applications and hosting in server and teaching python and cyber security for students.</li>
+                        <li>Developed and maintained full-stack web applications using HTML, CSS, JavaScript, and Bootstrap.</li>
+                        <li>Implemented responsive designs for optimal user experience across different devices.</li>
+                        <li>Transformed wireframes and mockups into functional and visually appealing user interfaces.</li>
+                        <li>Built interactive front-end components using React.js for enhanced reusability and maintainability.</li>
+                        <li>Utilized Node.js and Express.js to develop server-side logic and APIs for seamless integration.</li>
+                        <li>Designed and implemented MySQL databases for efficient data storage and retrieval.</li>
+                        <li>Integrated Django framework for building robust and scalable web applications following best practices.</li>
+                        <li>Conducted thorough testing and debugging to ensure smooth application functionality.</li>
+                        <li>Collaborated with cross-functional teams to deliver high-quality software solutions.</li>
+                        </ul>
+                        <h3> Example Projects :</h3>
+                        <ol>
+                            <li>E-commerce Website:</li>
+                        </ol>
+                        <ul>
+                            <li>Developed a full-stack e-commerce website using React and Node.js.</li>
+                            <li>Integrated payment gateways and implemented secure user authentication.</li>
+                            <li>Designed a responsive user interface with intuitive navigation and search functionality.</li>
+                        </ul>
+                        <ol>
+                            <li>Task Management Application:</li>
+                        </ol>
+                        <ul>
+                            <li>Created a task management application using Django and React.</li>
+                            <li>Implemented user registration, task assignment, and progress tracking features.</li>
+                            <li>Utilized MySQL database for efficient storage and retrieval of task-related data.</li>
+                        </ul>
+                    
+                       
+    
+                </div>
+                <!-- Box 2 -->
+                
+               
+                
+                <!-- Box 3 -->
+                <div class="services-box">
+                    <img src="./image/Screenshot 2023-03-10 at 1.38.38 AM.png" alt="" width="100px" height="80px">
+                    <h3>Associate developer</h3>
+                    <span>Jan - mar 2021 - Globalentitycore, India</span><br>
+                    <ul class="list"> 
+                        <li>Directs software design and development.</li>
+                        <li>Web-scrapping projects using python with beautiful soup.</li>
+                        <li>Team work.</li>
+                    </ul>
+                </div>
+    
+                <div class="services-box">
+                    <img src="./image/logo-udemy.svg" alt="" width="100px" style="background-color: white;">
+                    <div>
+                        <img src="./image/new_internshala_logo.svg" alt="" width="100px">
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <ul class="list"> 
+                        <li>Done SOC analyst course (Splunk) - 6 months in Udemy</li>
+                        <li>Done Ethical hacking Course (OWASP) - 3 months in Internshala</li>
+                        <li>Currently pursuing Advance Cybersecurity as a Elective in my Master's degree</li>
+                    </ul>
+                </div>
+            </div>
+                   
+
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="services-box">
+                <img src="{% static '/image/Screenshot 2023-03-10 at 1.38.38 AM.png' %}" alt="" width="100px" height="80px">
+                <h3>Associate developer</h3>
+                <span>Jan - mar 2021 - Globalentitycore, India</span><br>
+                <ul class="list" > 
+                    <li>Directs software design and development.</li>
+                    <li>Web-scrapping projects using python with beautiful soup.</li>
+                    <li>Team work.</li>
+                </ul>
+            </div>
+
+            <div class="services-box">
+                <img src="{% static '/image/logo-udemy.svg' %}" alt="" width="100px" style="background-color: white;" >
+                <div>
+                    <img src="{% static '/image/new_internshala_logo.svg' %}" alt="" width="100px">
+                </div>
+                <h3>Cybersecurity</h3>
+                <ul class="list" > 
+                    <li>Done SOC analyst course (Splung) - 6 months in Udemy</li>
+                    <li>Done Ethical hacking Course (OWASP) - 3 months in Internshala</li>
+                    <li>Currently pursuing Advance Cybersecurity as a Elective in my Master's degree</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading">
+            <h2>Portfolio</h2>
+            <span>My Recent Work</span>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-img">
+                <a href="https://wastechno.com" target="_blank" >
+                    <img src="{% static '/image/portfolio was.png' %}" alt="" >
+                </a>
+            </div>
+            <div class="portfolio-img">
+                <a>
+                    <img src="{% static '/image/portfolio my.png' %}" alt="">
+                </a>
+                
+            </div>
+            <div class="portfolio-img" >
+                <a href="https://github.com/Thejas04?tab=repositories" target="_blank"s >
+                    <img src="{% static '/image/portfolio project.png' %}" alt="">
+                </a>
+                
+            </div>
+           
+            
+        </div>
+    </section>
+
+    <!-- Contact 
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <span>Connect With Us</span>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="text" placeholder="Your Name">
+                <input type="email" name="" id="" placeholder="Your Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                <input type="button" value="Send" class="contact-button">
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Blog -->
+  <section>
+     <div class="heading">
+        <h2>Blog</h2>
+        <span>Learn and Earn</span>
+     </div><br>
+        <div class = "slideshow-container">
+         <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="{% static '/image/slide1.png' %}" width="100%" height="400px" >
+            <div class="text">
+                <a href="blog">Click here to know more</a>
+            </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="{% static '/image/slide2.jpg' %}" width="100%" height="400px" >
+            
+            <div class="text">
+                <a href="blog">Click here to know more</a>
+            </div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="{% static '/image/slide3.png' %}" width="100%" height="400px" >
+            <div class="text">
+                <a href="blog" target="_blank" >Click here to know more</a>
+            </div>
+          </div>
+     </div>
+
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        
+    </section>
+
+    <!-- Footer -->
+    <section class="education" id="education">
+        <div class="heading">
+            <h2>EDUCATION</h2>
+            <span>STUDIED</span>
+        </div>
+        <div class="education-content">
+            <!-- fBox 1 -->
+            
+            <div class="education-box">
+                <img src="{% static '/image/IU.png' %}" alt="" width="150px" > <br>
+                <h3>Masters in Computer Science</h3>
+                <p>IU International University of applied science</p>
+                <span>Dec 2021 - Present Berlin, Germany</span>
+            </div>
+
+            <div class="education-box">
+                <img src="{% static '/image/bgs.png' %}" alt="" width="100px" height="80px">
+                <h3>B.E : Electronics and Communications Engineering</h3>
+                <p>BGS Institute of Technology</p>
+                <span>Aug 2017 - Jul 2021. CGPA - 6.20 Bellur Cross, Karnataka, India</span>
+            </div>
+
+            <div class="education-box">
+                <img src="{% static '/image/alvas-puc-logo.png' %}" alt="" width="200rem" style="background-color: aliceblue;" > <br>
+                <h3>12th Class</h3>
+                <p>Alvas Comp Pu College</p>
+                <span>Jul 2015 - Mar 2017, 82.83% Moodbidri, Karnataka, India</span>
+            </div>
+        </div>
+        <br><br>
+    <!-- Copyright -->
+    <div class="copyright">
+        <p><div>© 2023 Thejas Malenahalli Niranjan</div></p>
+    </div>
+ 
+   
+ 
+    <!-- Link To JS -->
+    
+    <script src="{% static '/js/script.js' %}"></script>
+</body>
+</html>
